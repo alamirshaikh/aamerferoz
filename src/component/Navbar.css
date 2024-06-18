@@ -1,0 +1,119 @@
+/* Navbar */
+.navbar {
+ 
+    background-color: #000000; /* Dark background color */
+  /* Adjust padding for top and bottom */
+ border-bottom: 1px solid rgb(116, 112, 112);
+    
+    align-items: center; /* Center items vertically */
+}
+
+ 
+
+
+@media (max-width:600px) {
+.navbar-brand-title{
+    font-size: 2rem;
+}
+
+ 
+
+
+}
+
+.navbar-brand {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: #000000; /* White text color for brand */
+    font-size: 3rem; /* Adjust font size */
+    margin-right: auto; /* Push brand to the left */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Push nav items to the right */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px; /* Add margin between nav items */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* White text color for nav links */
+    font-size: 1.5rem; /* Adjust font size */
+    transition: color 0.2s ease; /* Smooth color transition */
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Required for pseudo-element */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107; /* Yellow color on hover */
+}
+
+.navbar-nav .nav-link::before {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute;
+    width: 0%;
+    height: 2px; /* Underline height */
+    bottom: -1px; /* Position just below text */
+    left: 0; /* Start from left */
+    background-color: #ffc107; /* Yellow color */
+    transition: width 0.2s ease; /* Smooth width transition */
+}
+
+.navbar-nav .nav-link:hover::before {
+    width: 100%; /* Full width on hover */
+}
+
+.navbar-toggler {
+    border: none; /* Remove border */
+    background: transparent; /* Transparent background */
+    color: #ffffff; /* White color for toggler icon */
+    font-size: 1.5rem; /* Adjust font size */
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+.navbar-toggler-icon {
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    transform: rotate(90deg); /* Rotate icon when menu is expanded */
+}
+
+/* Offcanvas Menu */
+.offcanvas {
+    position: fixed; /* Fixed position */
+    top: 0; /* Top of the viewport */
+    left: 0; /* Left of the viewport */
+    width: 250px; /* Width of the offcanvas menu */
+    height: 100%; /* Full height of the viewport */
+    background-color: #0e0b0d; /* Dark background color */
+    transform: translateX(-100%); /* Initially off screen */
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.offcanvas.show {
+    transform: translateX(0); /* Slide in when show class is applied */
+}
+
+.offcanvas-header {
+ 
+    background-color: #040505; /* Dark background color for header */
+    border-bottom: 1px solid #a7aeb6; /* Border color */
+    padding: 15px; /* Padding for header */
+}
+
+.offcanvas-title {
+  
+   
+    color: #ffffff; /* White text color for offcanvas title */
+    font-size: 1.2rem; /* Adjust font size */
+    margin-bottom: 0; /* Remove margin bottom */
+}
+
+.offcanvas-body {
+ 
+    padding: 15px; /* Padding for body */
+}

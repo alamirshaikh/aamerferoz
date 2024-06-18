@@ -1,0 +1,36 @@
+.footer{
+    display: flex;
+ 
+    padding: 30px;
+    justify-content: space-around;
+ 
+  /* Adjust padding for top and bottom */
+ border-top: 1px solid rgb(116, 112, 112);
+
+}
+
+.footer h3{
+   font-size: 2rem;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.footer p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+
+@media (max-width:600px) {
+
+
+    .footer h3{
+        font-size: 1rem;
+    }
+
+
+    .footer p{
+        font-size: 10px;
+    }
+    
+}
